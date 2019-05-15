@@ -1,0 +1,7 @@
+.WhiteLine {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 3px solid white;
+    width: 60px;
+}

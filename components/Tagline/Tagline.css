@@ -1,0 +1,14 @@
+.Container {
+    display: block;
+    width: 550px;
+}
+
+.FoundationName {
+    color: white;
+    font-size: 60px;
+}
+
+.Tagline {
+    color: white;
+    font-size: 35px;
+}

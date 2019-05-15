@@ -1,0 +1,27 @@
+.ImageBackground {
+    color: white;
+    background: linear-gradient(0deg, rgba(0, 20, 50, 0.5), rgba(0, 20, 50, 0.5)), url(/static/images/GirlsCover.png);
+    background-size: cover;
+    resize: both;
+    overflow: scroll;
+    background-position: center center;
+    /*min-height: 95%; */
+    position: relative;
+    height: 80vh;
+}
+
+.Header {
+    font-weight: 200;
+    font-size: 35px;
+    line-height: 50px;
+}
+
+.Tagline{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    left: 50%;
+    width: 45%;
+    transform: translate(-50%, -50%);
+}
