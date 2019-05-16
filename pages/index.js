@@ -1,14 +1,14 @@
-import Layout from '../components/Layout/Layout.js'
+import Layout from '../components/Layout.js'
 import Link from 'next/link'
 import fetch from 'isomorphic-unfetch'
 import Head from 'next/head'
 import Global from './global.css'
-import DonateLayout from '../components/DonateLayout/DonateLayout'
+import DonateLayout from '../components/DonateLayout'
 import { Component } from 'react';
 import Fonts from './Font'
 import SectionHeading from '../components/SectionHeading/SectionHeading'
 import VideoSection from '../components/VideoSection/VideoSection'
-import CardHolder from '../components/CardHolder/CardHolder'
+import CardHolder from '../components/CardHolder'
 import ImageBackground from '../components/ImageBackground/ImageBackground'
 import CardHolderAction from '../components/CardHolderAction/CardHolderAction'
 
@@ -37,6 +37,8 @@ class Index extends Component {
         <ImageBackground/>
         <SectionHeading heading="WAYS TO DONATE">There are many ways you can help us build for the future. So be a part of Borneo Football and help change a child's life.</SectionHeading>
         <CardHolderAction />
+        <SectionHeading heading="OUR PARTNERS">Together we can start something bigger</SectionHeading>
+
       </div>
     )
   }

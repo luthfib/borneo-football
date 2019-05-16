@@ -15,11 +15,13 @@ const CardItemHeadingStyles = styled.div`
 
 const CardItemImgStyles = styled.img`
   height: 125px;
+  padding-bottom: 15px;
 `
 
 const CardItemStyles = styled.div`
   width: 80%;
   margin: auto;
+  padding: 20px;
 `
 
 export { CardItemContentStyles, CardItemHeadingStyles, CardItemImgStyles, CardItemStyles };

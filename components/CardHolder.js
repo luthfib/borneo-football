@@ -1,9 +1,19 @@
-import classes from './CardHolder.css'
-import Card from '../../common/Card/Card'
+import Card from '../common/Card/Card'
+import styled from 'styled-components';
+
+const CardholderStyles = styled.div`
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+  
+    @media (max-width: 400px) {
+        display: block;
+  }
+`
 
 export default function CardHolder(props) {
   return (
-    <div className={classes.CardHolder}>
+    <CardholderStyles>
       <Card heading='FOOTBALL' 
             src='/static/images/Football.png'
             content='We hold weekly training sessions and players test their skills in official tournaments. We also organize regular football clinics and Summer camps where we match off against players from around Indonesia and overseas. Our ‘Happy Feet’ program supports players from low income families with shoes, uniforms, socks and jerseys.'>
@@ -16,6 +26,6 @@ export default function CardHolder(props) {
             src='/static/images/Education.png'
             content='In Central Kalimantan, nearly 1 in 3 children aged 7-15 drop out of school mainly due to economic pressures. We support our players with educational materials and school fee subsidies. Sponsorship is also provided for English and computer classes, vocational courses and conservation activities through our partner NGO-YUM (Yayasan Usaha Mulia).'>
       </Card>
-    </div>
+    </CardholderStyles>
   )
 }
