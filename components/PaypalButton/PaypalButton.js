@@ -1,5 +1,5 @@
 import classes from './PaypalButton.css'
-import Button from '../../common/Button/Button'
+import { Button } from '../../common/ButtonStyles'
 
 export default function PaypalButton(props) {
   return (
@@ -8,7 +8,7 @@ export default function PaypalButton(props) {
         <input type="hidden" name="cmd" value="_s-xclick" />
         <input type="hidden" name="hosted_button_id" value="5PPY7MEKD8LMQ" />
       </form>
-      <Button>{props.children}</Button>
+      <Button type="submit" form="DonateForm" value="Submit">{props.children}</Button>
     </div>
   )
 }

@@ -1,5 +1,5 @@
 import classes from './SectionHeading.css'
-import Line from '../../common/Line/Line'
+import Line from '../../common/LineStyles'
 
 const ShowImage = (props) => {
     if(props.children) {

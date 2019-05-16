@@ -1,5 +1,5 @@
 import classes from './Tagline.css'
-import Line from '../../common/Line/Line'
+import Line from '../../common/LineStyles'
 
 export default function Tagline(props) {
   return (

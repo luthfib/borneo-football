@@ -1,5 +1,5 @@
 import classes from './CardItemAction.css'
-import Line from '../Line/Line'
+import Line from '../LineStyles'
 import PaypalButton from '../../components/PaypalButton/PaypalButton'
 import classNames from 'classnames/bind';
 import overrideDefault from '../../utils/Overrides'
