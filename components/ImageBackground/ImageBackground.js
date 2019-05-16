@@ -1,6 +1,5 @@
 import classes from './ImageBackground.css'
 import Line from '../../common/LineStyles'
-import overrides from './Override.css'
 
 export default function ImageBackground(props) {
     return (
