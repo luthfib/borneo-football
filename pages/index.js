@@ -9,7 +9,7 @@ import Fonts from './Font'
 import SectionHeading from '../components/SectionHeading/SectionHeading'
 import VideoSection from '../components/VideoSection/VideoSection'
 import CardHolder from '../components/CardHolder'
-import ImageBackground from '../components/ImageBackground/ImageBackground'
+import ImageBackground from '../components/ImageBackground'
 import CardHolderAction from '../components/CardHolderAction/CardHolderAction'
 
 

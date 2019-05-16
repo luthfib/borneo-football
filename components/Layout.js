@@ -1,5 +1,5 @@
 import Header from './Header/Header'
-import Tagline from './Tagline/Tagline'
+import Tagline from './Tagline'
 import styled from 'styled-components';
 
 const LayoutStyles = styled.div`
