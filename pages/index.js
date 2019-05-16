@@ -2,16 +2,19 @@ import Layout from '../components/Layout.js'
 import Link from 'next/link'
 import fetch from 'isomorphic-unfetch'
 import Head from 'next/head'
-import Global from './global.css'
+// import Global from './global.css'
 import DonateLayout from '../components/DonateLayout'
 import { Component } from 'react';
 import Fonts from './Font'
-import SectionHeading from '../components/SectionHeading/SectionHeading'
-import VideoSection from '../components/VideoSection/VideoSection'
+import SectionHeading from '../components/SectionHeading'
+import VideoSection from '../components/VideoSection'
 import CardHolder from '../components/CardHolder'
 import ImageBackground from '../components/ImageBackground'
-import CardHolderAction from '../components/CardHolderAction/CardHolderAction'
-
+import CardHolderAction from '../components/CardHolderAction'
+import globalStyle from './global.css';
+import SponsorDiv from '../components/SponsorDiv'
+import Container from '../components/AnnualReport'
+import Footer from '../components/Footer'
 
 class Index extends Component {
   componentDidMount() {
@@ -20,11 +23,10 @@ class Index extends Component {
 
   render() {
     return (
-      <div className={Global}>
+      <div className={globalStyle}>
         <Head>
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <meta charSet="utf-8" />
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css" />
         </Head>
         <Layout>
         </Layout>
@@ -38,7 +40,9 @@ class Index extends Component {
         <SectionHeading heading="WAYS TO DONATE">There are many ways you can help us build for the future. So be a part of Borneo Football and help change a child's life.</SectionHeading>
         <CardHolderAction />
         <SectionHeading heading="OUR PARTNERS">Together we can start something bigger</SectionHeading>
-
+        <SponsorDiv />
+        <Container />
+        <Footer></Footer>
       </div>
     )
   }

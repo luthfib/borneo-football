@@ -1,14 +1,12 @@
-import Card from '../common/Card/Card'
+import Card from '../common/Card'
 import styled from 'styled-components';
 
 const CardholderStyles = styled.div`
     display: flex;
     justify-content: space-between;
     padding: 10px;
-  
-    @media (max-width: 400px) {
-        display: block;
-  }
+    flex-wrap: wrap;
+
 `
 
 export default function CardHolder(props) {
