@@ -42,13 +42,19 @@ const BlueButton = styled(RedButton)`
 
 
 function Button(props) {
+  let type; 
+  if(props.type){
+    type = props.type;
+  } else {
+    type = 'button'
+  }
   if (props.blue) {
     return (
       <BlueButton {...props} >{props.children}</BlueButton>
     )
   }
   return (
-    <RedButton type={props => props.type ? props.type : "button" } form="DonateForm" value="Submit">{props.children}</RedButton>
+    <RedButton type={type} form="DonateForm" value="Submit">{props.children}</RedButton>
   )
 }
 

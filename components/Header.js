@@ -1,6 +1,8 @@
 import PaypalButton from './PaypalButton'
 import Logo from './Logo'
 import styled from 'styled-components';
+import device from '../utils/ResponsiveHelpers'
+
 
 const HeaderStyled = styled.div`
   text-align: center;
@@ -8,16 +10,33 @@ const HeaderStyled = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  width: fit-content;
+  margin: auto; 
 `
 
 const ATagStyled = styled.a`
   padding: 20px;
   color: white;
+
+  @media ${device.laptopLSm} {
+    padding: 15px;
+    font-size: 14px;
+  }
+
+  @media ${device.tabletMd} {
+    padding: 13px;
+    font-size: 13px;
+  }
 `
 
-export default function Header() {
-  return (
-    <HeaderStyled>
+export default class Header extends React.Component {
+  constructor(props){
+    super(props)
+  }
+
+  render() {
+    return (
+      <HeaderStyled>
       <Logo src='/static/images/Logo.png' height="175px"></Logo>
       <div>
         <ATagStyled>HOME</ATagStyled>
@@ -29,5 +48,6 @@ export default function Header() {
       </div>
       <PaypalButton >DONATE NOW</PaypalButton>
     </HeaderStyled>
-  )
+    )
+  }
 }

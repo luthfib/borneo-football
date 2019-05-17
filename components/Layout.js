@@ -10,13 +10,25 @@ const LayoutStyles = styled.div`
   min-height: 400px;
 `
 
-export default function Layout(props) {
-  return (
-    <LayoutStyles>
-      <div>
-        <Header />
-        <Tagline foundationName="Borneo Football" tagline="The Power of Football Inspiring the Next Generation" />
-      </div>
-    </LayoutStyles>
-  )
+const ContainerStyles = styled.div`
+  width: fit-content;
+  margin: auto;
+`
+
+export default class Layout extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+  
+  render() {
+    return (
+      <LayoutStyles>
+        <ContainerStyles>
+          <Header />
+          <Tagline foundationName="Borneo Football" tagline="The Power of Football Inspiring the Next Generation" />
+        </ContainerStyles>
+      </LayoutStyles>
+    )
+  }
 }
+

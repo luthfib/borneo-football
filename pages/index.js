@@ -27,6 +27,7 @@ class Index extends Component {
         <Head>
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <meta charSet="utf-8" />
+          <script src="https://www.youtube.com/iframe_api"></script>
         </Head>
         <Layout>
         </Layout>
