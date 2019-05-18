@@ -2,7 +2,7 @@ import PaypalButton from './PaypalButton'
 import Logo from './Logo'
 import styled from 'styled-components';
 import device from '../utils/ResponsiveHelpers'
-
+import BurgerIcon from './BurgerIcon'
 
 const HeaderStyled = styled.div`
   text-align: center;
@@ -12,6 +12,12 @@ const HeaderStyled = styled.div`
   justify-content: center;
   width: fit-content;
   margin: auto; 
+
+  @media ${device.tabletSm} {
+    width: 100%;
+    justify-content: unset;
+  
+  }
 `
 
 const ATagStyled = styled.a`
@@ -27,27 +33,34 @@ const ATagStyled = styled.a`
     padding: 13px;
     font-size: 13px;
   }
+
+  @media ${device.tabletSm} {
+    display: none;
+  }
 `
 
 export default class Header extends React.Component {
-  constructor(props){
+  constructor(props) {
     super(props)
   }
 
   render() {
     return (
-      <HeaderStyled>
-      <Logo src='/static/images/Logo.png' height="175px"></Logo>
       <div>
-        <ATagStyled>HOME</ATagStyled>
-        <ATagStyled>ABOUT US</ATagStyled>
-        <ATagStyled>OUR WORK</ATagStyled>
-        <ATagStyled>GET INVOLVED</ATagStyled>
-        <ATagStyled>PARTNER</ATagStyled>
-        <ATagStyled>CONTACT</ATagStyled>
+        
+        <HeaderStyled>
+       
+          <Logo src='/static/images/Logo.png' height="175px"></Logo>
+          <div>
+            <ATagStyled href="#">HOME</ATagStyled>
+            <ATagStyled href="#About">ABOUT US</ATagStyled>
+            <ATagStyled href="#OurWork">OUR WORK</ATagStyled>
+            <ATagStyled href="#GetInvolved">GET INVOLVED</ATagStyled>
+            <ATagStyled href="#OurPartners">PARTNER</ATagStyled>
+          </div>
+          <PaypalButton >DONATE NOW</PaypalButton>
+        </HeaderStyled>
       </div>
-      <PaypalButton >DONATE NOW</PaypalButton>
-    </HeaderStyled>
     )
   }
 }

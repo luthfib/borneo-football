@@ -6,6 +6,7 @@ const LogoStyled = styled.img`
 
   @media ${device.tabletMd} {
     height: 130px;
+    padding-left: 50px;
   }
 `
 

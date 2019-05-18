@@ -52,7 +52,7 @@ const ConditionalImageStyles = styled.img`
 
 export default function SectionHeading(props) {
     return (
-        <ContainerStyled>
+        <ContainerStyled id={props.navID}>
             <SectionHeadingStyles>
                 <Line />
                 <HeaderStyles>{props.heading}</HeaderStyles>

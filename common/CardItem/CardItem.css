@@ -1,0 +1,19 @@
+.CardItemImg{
+    height: 125px;
+}
+
+.CardItemHeading {
+    color: rgba(223, 0, 18, 1);
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.CardItemContent {
+    font-weight: 100;
+    font-size: 18px;
+}
+
+.CardItem {
+    width: 80%;
+    margin: auto;
+}

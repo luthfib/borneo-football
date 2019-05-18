@@ -10,6 +10,10 @@ const ContainerStyles = styled.div`
   @media ${device.tabletMd} {
     width: 475px;
   }  
+
+  @media ${device.tabletSm} {
+    padding: 50px;
+  }  
 `
 
 const FoundationNameStyles = styled.div`
