@@ -1,9 +1,9 @@
 import styled from 'styled-components';
-import device from '../utils/ResponsiveHelpers'
+import PaypalButton from './PaypalButton'
 
 const HeaderStyled = styled.header`
   background-color: transparent;
-
+  position: fixed;
   width: 100%;
   z-index: 3;
 
@@ -55,6 +55,7 @@ const MenuIconStyled = styled.label`
   display: inline-block;
   float: right;
   padding: 28px 20px;
+  background: black;
   position: relative;
   user-select: none;
 
@@ -172,6 +173,9 @@ class BurgerIcon extends React.Component {
                     </ListStyled>
                     <ListStyled onClick={this.changeVisibility}>
                         <MenuItemAStyled href="#OurPartners"> PARTNER </MenuItemAStyled>
+                    </ListStyled>
+                    <ListStyled onClick={this.changeVisibility}>
+                      <PaypalButton blue>DONATE</PaypalButton>
                     </ListStyled>
                 </MenuStyled>
             </HeaderStyled>

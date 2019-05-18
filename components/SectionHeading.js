@@ -5,7 +5,9 @@ import device from '../utils/ResponsiveHelpers'
 const ShowImage = (props) => {
     if(props.children) {
         return (
-            <ConditionalImageStyles src={props.children} />
+            <a href="mailto:borneo.football@gmail.com?subject=">
+              <ConditionalImageStyles src={props.children} />
+            </a>
         )
     };
     return null;

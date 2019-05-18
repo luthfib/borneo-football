@@ -1,7 +1,5 @@
 import { VideButtonRow, VideoButtonImg } from '../common/PlayButtonStyles'
 import styled from 'styled-components';
-import ModalVideo from 'react-modal-video'
-import classes from './Modal.css'
 
 
 const VideoSectionStyles = styled.div`
@@ -15,38 +13,57 @@ const VideoSectionStyles = styled.div`
   position: relative;
   min-height: 300px;
 `
-class Modal extends React.Component {
 
-  constructor () {
-    super()
-    this.state = {
-      isOpen: false
+const ImgAContainer = styled.a`
+  cursor: pointer;
+`
+
+const VideoFrameStyled = styled.iframe`
+  width: 100%;
+  height: 100%;
+`
+
+class VideoSection extends React.Component {
+  state = {
+    displayVideo: 'none',
+    displayVideoButton: 'initial'
+  }
+
+  constructor(props) {
+    super(props);
+  }
+
+  toggleVideoDisplay() {
+    this.toggleVideoButton();
+    if (this.state.displayVideo === 'none') {
+      this.setState({ displayVideo: 'unset' });
+    } else {
+      this.setState({ displayVideo: 'none' });
     }
-    this.openModal = this.openModal.bind(this)
   }
 
-  openModal () {
-    this.setState({isOpen: true})
+  toggleVideoButton() {
+    if (this.state.displayVideoButton === 'initial') {
+      this.setState({ displayVideoButton: 'none' });
+    } else {
+      this.setState({ displayVideoButton: 'initial' });
+    }
   }
 
-  render () {
+
+  render() {
     return (
-      <div>
-        <ModalVideo styles={classes.Modal} channel='youtube' isOpen={this.state.isOpen} videoId='g5FY-XQS9OU' onClose={() => this.setState({isOpen: false})} />
-        <a onClick={this.openModal}><VideoButtonImg src='/static/images/LightPlayButton.png'/> </a>
-      </div>
+      <VideoSectionStyles>
+        <VideoFrameStyled style={{ display: this.state.displayVideo }} src="https://www.youtube.com/embed/g5FY-XQS9OU?autoplay=1" frameborder="0" allowfullscreen>
+        </VideoFrameStyled>
+        <VideButtonRow style={{ display: this.state.displayVideoButton }}>
+          <ImgAContainer onClick={this.toggleVideoDisplay.bind(this)}>
+            <VideoButtonImg src='/static/images/LightPlayButton.png' />
+          </ImgAContainer>
+        </VideButtonRow>
+      </VideoSectionStyles>
     )
   }
 }
-/*<a> 
-                <VideoButtonImg src='/static/images/LightPlayButton.png'/> 
-              </a>*/
-export default function Tagline(props) {
-  return (
-        <VideoSectionStyles>
-            <VideButtonRow> 
-              <Modal></Modal>
-            </VideButtonRow>
-        </VideoSectionStyles>
-  )
-}
+
+export default VideoSection

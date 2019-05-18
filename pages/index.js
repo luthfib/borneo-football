@@ -15,10 +15,13 @@ import globalStyle from './global.css';
 import SponsorDiv from '../components/SponsorDiv'
 import Container from '../components/AnnualReport'
 import Footer from '../components/Footer'
+import ReactGA from 'react-ga';
 
 class Index extends Component {
   componentDidMount() {
     Fonts()
+    ReactGA.initialize('UA-117085773-1')
+    ReactGA.pageview(document.location.pathname)
   }
 
   render() {

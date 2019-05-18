@@ -2,7 +2,6 @@ import PaypalButton from './PaypalButton'
 import Logo from './Logo'
 import styled from 'styled-components';
 import device from '../utils/ResponsiveHelpers'
-import BurgerIcon from './BurgerIcon'
 
 const HeaderStyled = styled.div`
   text-align: center;
@@ -16,13 +15,14 @@ const HeaderStyled = styled.div`
   @media ${device.tabletSm} {
     width: 100%;
     justify-content: unset;
-  
   }
 `
 
 const ATagStyled = styled.a`
   padding: 20px;
   color: white;
+  text-decoration: none;
+
 
   @media ${device.laptopLSm} {
     padding: 15px;
@@ -36,6 +36,12 @@ const ATagStyled = styled.a`
 
   @media ${device.tabletSm} {
     display: none;
+  }
+`
+
+const CustomPaypalButton = styled(PaypalButton)`
+   @media (max-width: 850px) {
+      display: none;
   }
 `
 
@@ -58,7 +64,7 @@ export default class Header extends React.Component {
             <ATagStyled href="#GetInvolved">GET INVOLVED</ATagStyled>
             <ATagStyled href="#OurPartners">PARTNER</ATagStyled>
           </div>
-          <PaypalButton >DONATE NOW</PaypalButton>
+          <CustomPaypalButton >DONATE NOW</CustomPaypalButton>
         </HeaderStyled>
       </div>
     )

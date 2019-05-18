@@ -1,8 +1,17 @@
 import styled from 'styled-components';
+import device from '../utils/ResponsiveHelpers'
 
 const SponsorImgStyles = styled.img`
   height: 160px;
   padding: 20px;
+
+  @media ${device.tabletMd} {
+    height: 130px;
+  }  
+
+  @media ${device.tabletSm} {
+    height: 110px;
+  }  
 `
 
 const SponsorDivStyles = styled.div`

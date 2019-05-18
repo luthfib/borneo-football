@@ -21,12 +21,6 @@ const ContainerStyles = styled.div`
   }
 `
 
-/*
-@media ${device.tabletSm} {
-    width: 100%;
-  }
-*/
-
 export default class Layout extends React.Component {
   constructor(props) {
     super(props);

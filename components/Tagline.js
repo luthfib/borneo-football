@@ -8,11 +8,12 @@ const ContainerStyles = styled.div`
   padding-top: 8vh;
 
   @media ${device.tabletMd} {
-    width: 475px;
+    width: 90%;
   }  
 
   @media ${device.tabletSm} {
-    padding: 50px;
+    padding: 20px;
+    padding-top: 50px;
   }  
 `
 
