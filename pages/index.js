@@ -16,6 +16,10 @@ import SponsorDiv from '../components/SponsorDiv'
 import Container from '../components/AnnualReport'
 import Footer from '../components/Footer'
 import ReactGA from 'react-ga';
+import SocialMedia from '../components/SocialMedia'
+
+
+
 
 class Index extends Component {
   componentDidMount() {
@@ -47,6 +51,8 @@ class Index extends Component {
         <SponsorDiv />
         <Container />
         <Footer></Footer>
+        <SocialMedia></SocialMedia>
+
       </div>
     )
   }
