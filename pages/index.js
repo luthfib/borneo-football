@@ -2,7 +2,6 @@ import Layout from '../components/Layout.js'
 import Link from 'next/link'
 import fetch from 'isomorphic-unfetch'
 import Head from 'next/head'
-// import Global from './global.css'
 import DonateLayout from '../components/DonateLayout'
 import { Component } from 'react';
 import Fonts from './Font'
@@ -34,7 +33,9 @@ class Index extends Component {
         <Head>
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <meta charSet="utf-8" />
+          <meta name="description" content="Borneo Football International Academy kicked off in 2015 with just 14 children - word quickly spread and today there are more than 150 players, including three allgirls team. The program quickly expanded when we realized these children - who come from low- income families - needed much more."></meta>
           <script src="https://www.youtube.com/iframe_api"></script>
+          <title>Borneo Football</title>
         </Head>
         <Layout>
         </Layout>

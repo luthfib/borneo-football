@@ -67,7 +67,7 @@ const SocialMediaIconMail = styled(SocialMediaIcon)`
 
 export default function SocialMedia(props) {
     return (
-        <div class="wrapper">
+        <div>
             <SocialMediaList>
                 <SocialMediaListItem>
                     <SocialMediaIconFB href="https://www.facebook.com/borneo.football.international/" target="_blank">

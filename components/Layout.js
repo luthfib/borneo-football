@@ -3,9 +3,10 @@ import Tagline from './Tagline'
 import styled from 'styled-components';
 import device from '../utils/ResponsiveHelpers'
 import BurgerIcon from './BurgerIcon'
+//url('/static/images/Cover.jp2')
 
 const LayoutStyles = styled.div`
-  background: linear-gradient(0deg, rgba(0, 20, 50, 0.3), rgba(0, 20, 50, 0.3)), url(/static/images/Cover.jpg);
+  background: linear-gradient(0deg, rgba(0, 20, 50, 0.3), rgba(0, 20, 50, 0.3)), url(${props => props.img});
   height: 100vh;
   background-size: cover;
   background-position: center center;
@@ -28,7 +29,7 @@ export default class Layout extends React.Component {
   
   render() {
     return (
-      <LayoutStyles>
+      <LayoutStyles img='/static/images/Cover.jpg'>
         <ContainerStyles>
         <BurgerIcon></BurgerIcon>
           <Header />
