@@ -30,6 +30,10 @@ const HeaderStyles = styled.h1`
   font-size: 60px;
   margin-bottom: 10px;
   font-weight: 500;
+
+  @media ${device.mobileMd} {
+    font-size: 50px;
+  }
 `
 
 const ContentStyles = styled.p`

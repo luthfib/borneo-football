@@ -12,6 +12,11 @@ const SponsorImgStyles = styled.img`
   @media ${device.tabletSm} {
     height: 110px;
   }  
+
+  @media ${device.mobileMd} {
+    height: 80px;
+  }  
+  
 `
 
 const SponsorDivStyles = styled.div`

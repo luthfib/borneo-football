@@ -9,12 +9,16 @@ const ContainerStyles = styled.div`
 
   @media ${device.tabletMd} {
     width: 90%;
+    padding-top: 50px;
+    margin: auto;
   }  
 
   @media ${device.tabletSm} {
-    padding: 20px;
     padding-top: 50px;
-  }  
+    width: 60%;
+    padding-left: 20px;
+    margin: initial;
+  } 
 `
 
 const FoundationNameStyles = styled.div`
@@ -29,6 +33,10 @@ const FoundationNameStyles = styled.div`
 const TaglineStyles = styled.div`
   color: white;
   font-size: 35px;
+
+  @media ${device.tabletSm} {
+    font-size: 25px;
+  } 
 `
 
 export default function Tagline(props) {
