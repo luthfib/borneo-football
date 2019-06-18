@@ -40,7 +40,7 @@ class Index extends Component {
         <Layout>
         </Layout>
         <DonateLayout />
-        <SectionHeading navID="About" heading="ABOUT">Borneo Football International Academy kicked off in 2015 with just 14 children - word quickly spread and today there are more than 150 players, including three allgirls team. The program quickly expanded when we realized these children - who come from low- income families - needed much more.</SectionHeading>
+        <SectionHeading navID="About" heading="ABOUT">Borneo Football International Academy kicked off in 2015 with just 14 children - word quickly spread and today, 4 years later, the Academy has 340 players including three all girls team and reaches more than 1000 students in local schools through football training, health and education programs</SectionHeading>
         <VideoSection />
         <SectionHeading navID="OurWork" heading="OUR WORK">The minimum wage for people in Central Kalimantan is well under $200 a month. Parents find it hard just to send their children to school - let alone provide them with extracurricular activities. Our players can take part in not only a wide range of football activities but also health and educational programs.</SectionHeading>
         <CardHolder />

@@ -51,6 +51,12 @@ export default function SponsorDiv(props) {
           <SponsorImgStyles src='/static/images/BeginForGood.jpg' />
         </SponsorDivStyles>
       </a>
+
+      <a href="www.australianvolunteers.com" target="_blank">
+        <SponsorDivStyles>
+          <SponsorImgStyles src='/static/images/AustralianVolunteers.png' />
+        </SponsorDivStyles>
+      </a>
       <a href="https://otsana.com" target="_blank">
         <SponsorDivStyles>
           <SponsorImgStyles src='/static/images/Otsana.png' />
@@ -59,6 +65,14 @@ export default function SponsorDiv(props) {
       <a href="https://yumindonesia.org" target="_blank">
         <SponsorDivStyles>
           <SponsorImgStyles src='/static/images/YUM.png' />
+        </SponsorDivStyles>
+      </a>
+
+     
+
+      <a href="" target="_blank">
+        <SponsorDivStyles>
+          <SponsorImgStyles src='/static/images/KUB.png' />
         </SponsorDivStyles>
       </a>
     </ContainerStyle>
