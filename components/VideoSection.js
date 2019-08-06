@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 const VideoSectionStyles = styled.div`
   color: white;
-  background: linear-gradient(0deg, rgba(0, 20, 50, 0.5), rgba(0, 20, 50, 0.5)), url(/static/images/VideoCover.png);
+  background: linear-gradient(0deg, rgba(0, 20, 50, 0.3), rgba(0, 20, 50, 0.3)), url(/static/images/VideoCover.png);
   background-size: cover;
   resize: both;
   overflow: scroll;
