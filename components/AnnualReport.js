@@ -112,7 +112,11 @@ export default function Container(props) {
               <Button blue>DOWNLOAD</Button>
             </a>
           </BrochureLeftStyles>
-          <img src="/static/images/BrochureCover.jpg" height="175px" />
+          <img
+            src="/static/images/BrochureCover.jpg"
+            height="175px"
+            alt="Brochure cover"
+          />
         </BrochureContainerStyles>
       </BrochureStyles>
     </ContainerStyles>
