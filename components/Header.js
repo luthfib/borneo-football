@@ -53,9 +53,9 @@ export default class Header extends React.Component {
   render() {
     return (
       <div>
-        
+
         <HeaderStyled>
-       
+
           <Logo src='/static/images/Logo.png' height="175px"></Logo>
           <div>
             <ATagStyled href="#">HOME</ATagStyled>

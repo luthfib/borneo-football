@@ -7,11 +7,11 @@ const VideButtonRow = styled.div`
   text-align: center;
   left: 50%;
   transform: translate(-50%, -50%);
-`
+`;
 
 const VideoButtonImg = styled.img`
   vertical-align: middle;
   height: 125px;
-`
+`;
 
-export { VideButtonRow, VideoButtonImg }
+export { VideButtonRow, VideoButtonImg };

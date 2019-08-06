@@ -1,10 +1,11 @@
-import Line from '../common/LineStyles'
 import styled from 'styled-components';
-import device from '../utils/ResponsiveHelpers'
+import Line from '../common/LineStyles'
+import device from '../utils/ResponsiveHelpers';
 
 const ImageBackgroundStyles = styled.div`
   color: white;
-  background: linear-gradient(0deg, rgba(0, 20, 50, 0.3), rgba(0, 20, 50, 0.2)), url(/static/images/GirlsCover.png);
+  background: linear-gradient(0deg, rgba(0, 20, 50, 0.3), rgba(0, 20, 50, 0.2)),
+    url(/static/images/GirlsCover.png);
   background-size: cover;
   resize: both;
   overflow: scroll;
@@ -12,7 +13,7 @@ const ImageBackgroundStyles = styled.div`
   position: relative;
   height: 80vh;
   min-height: 350px;
-`
+`;
 
 const TaglineStyles = styled.div`
   margin: 0;
@@ -34,8 +35,7 @@ const TaglineStyles = styled.div`
   @media ${device.mobileLg} {
     width: 80%;
   }
-
-`
+`;
 
 const HeaderStyles = styled.h2`
   font-weight: 200;
@@ -49,16 +49,18 @@ const HeaderStyles = styled.h2`
   @media ${device.mobileLg} {
     font-size: 25px;
   }
-`
+`;
 
 export default function ImageBackground(props) {
-    return (
-        <ImageBackgroundStyles>
-            <TaglineStyles> 
-                <Line primary override="none" />
-                <HeaderStyles>Most of the people who work with us do it purely for the love of football and to give back to the community.
-                </HeaderStyles>
-            </TaglineStyles>
-        </ImageBackgroundStyles>
-    )
+  return (
+    <ImageBackgroundStyles>
+      <TaglineStyles>
+        <Line primary override="none" />
+        <HeaderStyles>
+          Most of the people who work with us do it purely for the love of
+          football and to give back to the community.
+        </HeaderStyles>
+      </TaglineStyles>
+    </ImageBackgroundStyles>
+  );
 }
