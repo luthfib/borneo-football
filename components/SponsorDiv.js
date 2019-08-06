@@ -83,7 +83,7 @@ export default function SponsorDiv(props) {
         </SponsorDivStyles>
       </a>
 
-      <a href="" target="_blank">
+      <a href="" target="_blank" rel="noopener noreferrer">
         <SponsorDivStyles>
           <SponsorImgStyles src="/static/images/KUB.png" />
         </SponsorDivStyles>
