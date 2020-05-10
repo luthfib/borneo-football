@@ -1,8 +1,7 @@
-import Link from "next/link";
-import fetch from "isomorphic-unfetch";
 import Head from "next/head";
 import { Component } from "react";
 import ReactGA from "react-ga";
+import ReactDOM from "react-dom";
 import Layout from "../components/Layout.js";
 import DonateLayout from "../components/DonateLayout";
 import Fonts from "./Font";
@@ -18,11 +17,11 @@ import Footer from "../components/Footer";
 import SocialMedia from "../components/SocialMedia";
 
 class Index extends Component {
-  componentDidMount() {
-    Fonts();
-    ReactGA.initialize("UA-117085773-1");
-    ReactGA.pageview(document.location.pathname);
-  }
+  // componentDidMount() {
+  //   Fonts();
+  //   ReactGA.initialize("UA-117085773-1");
+  //   ReactGA.pageview(document.location.pathname);
+  // }
 
   render() {
     return (
