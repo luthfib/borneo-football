@@ -1,11 +1,12 @@
-import styled from 'styled-components';
-import PaypalButton from './PaypalButton';
+import styled from "styled-components";
+import PaypalButton from "./PaypalButton";
 
 const HeaderStyled = styled.header`
   background-color: transparent;
   position: fixed;
   width: 100%;
   z-index: 3;
+  top: ${(props) => `${props.topYOffset}px`};
 
   @media only screen and (min-width: 850px) {
     display: none;
@@ -73,7 +74,7 @@ const NaviconStyled = styled.span`
   :before,
   :after {
     background: white;
-    content: '';
+    content: "";
     display: block;
     height: 100%;
     position: absolute;
@@ -127,31 +128,62 @@ const ListStyled = styled.li`
 
 class BurgerIcon extends React.Component {
   state = {
-    bgColor: 'transparent',
+    bgColor: "transparent",
     checked: false,
+    topYOffset: 80,
+    heightOfBanner: 80,
   };
 
-  onChange = () => {
-    if (this.state.bgColor === 'transparent') {
-      this.setState({ bgColor: 'rgba(223, 0, 18, 1)' });
+  constructor(props) {
+    super(props);
+    this.handleScroll = this.handleScroll.bind(this);
+  }
+
+  componentDidMount() {
+    window.addEventListener("scroll", this.handleScroll);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener("scroll", this.handleScroll);
+  }
+
+  handleScroll(e) {
+    const topYOffset = this.state.heightOfBanner - window.pageYOffset;
+    let value = null;
+    if (topYOffset < 0) {
+      value = 0;
     } else {
-      this.setState({ bgColor: 'transparent' });
+      value = topYOffset;
+    }
+    this.setState({
+      topYOffset: value,
+    });
+  }
+
+  onChange = () => {
+    if (this.state.bgColor === "transparent") {
+      this.setState({ bgColor: "rgba(223, 0, 18, 1)" });
+    } else {
+      this.setState({ bgColor: "transparent" });
     }
   };
 
   changeVisibility = () => {
     if (this.state.checked === true) {
       this.setState({ checked: false });
-      this.setState({ bgColor: 'transparent' });
+      this.setState({ bgColor: "transparent" });
     } else {
       this.setState({ checked: true });
-      this.setState({ bgColor: 'rgba(223, 0, 18, 1)' });
+      this.setState({ bgColor: "rgba(223, 0, 18, 1)" });
     }
   };
 
   render() {
     return (
-      <HeaderStyled style={{ backgroundColor: this.state.bgColor }}>
+      <HeaderStyled
+        style={{ backgroundColor: this.state.bgColor }}
+        topYOffset={this.state.topYOffset}
+      >
         <MenuBtnStyled
           type="checkbox"
           checked={this.state.checked}
@@ -174,8 +206,8 @@ class BurgerIcon extends React.Component {
           </ListStyled>
           <ListStyled onClick={this.changeVisibility}>
             <MenuItemAStyled href="#GetInvolved">
-              {' '}
-              GET INVOLVED{' '}
+              {" "}
+              GET INVOLVED{" "}
             </MenuItemAStyled>
           </ListStyled>
           <ListStyled onClick={this.changeVisibility}>
