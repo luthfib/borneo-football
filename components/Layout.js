@@ -1,13 +1,15 @@
-import styled from 'styled-components';
-import Header from './Header'
-import Tagline from './Tagline'
-import device from '../utils/ResponsiveHelpers';
-import BurgerIcon from './BurgerIcon';
+import styled from "styled-components";
+import React from "react";
+import Header from "./Header";
+import Tagline from "./Tagline";
+import device from "../utils/ResponsiveHelpers";
+import BurgerIcon from "./BurgerIcon";
+import Banner from "./Banner";
 // url('/static/images/Cover.jp2')
 
 const LayoutStyles = styled.div`
   background: linear-gradient(0deg, rgba(0, 20, 50, 0.3), rgba(0, 20, 50, 0.3)),
-    url(${props => props.img});
+    url(${(props) => props.img});
   height: 100vh;
   background-size: cover;
   background-position: center center;
@@ -30,16 +32,20 @@ export default class Layout extends React.Component {
 
   render() {
     return (
-      <LayoutStyles img="/static/images/Cover.jpg">
-        <ContainerStyles>
-          <BurgerIcon></BurgerIcon>
-          <Header />
-          <Tagline
-            foundationName="Borneo Football"
-            tagline="The Power of Football Inspiring the Next Generation"
-          />
-        </ContainerStyles>
-      </LayoutStyles>
+      <React.Fragment>
+        <LayoutStyles img="/static/images/Cover.jpg">
+          <Banner />
+          <ContainerStyles>
+            <BurgerIcon></BurgerIcon>
+
+            <Header />
+            <Tagline
+              foundationName="Borneo Football"
+              tagline="The Power of Football Inspiring the Next Generation"
+            />
+          </ContainerStyles>
+        </LayoutStyles>
+      </React.Fragment>
     );
   }
 }

@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import CardItemAction from './CardItemAction'
+import CardItemAction from './CardItemAction';
 import PaypalButton from '../components/PaypalButton';
 
 const CardStyled = styled.div`
