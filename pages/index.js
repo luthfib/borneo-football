@@ -1,5 +1,3 @@
-import Link from "next/link";
-import fetch from "isomorphic-unfetch";
 import Head from "next/head";
 import { Component } from "react";
 import ReactGA from "react-ga";
