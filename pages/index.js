@@ -1,10 +1,9 @@
 import Head from "next/head";
 import { Component } from "react";
 import ReactGA from "react-ga";
-import ReactDOM from "react-dom";
 import Layout from "../components/Layout.js";
 import DonateLayout from "../components/DonateLayout";
-import Fonts from "./Font";
+import Fonts from "../common/Font";
 import SectionHeading from "../components/SectionHeading";
 import VideoSection from "../components/VideoSection";
 import CardHolder from "../components/CardHolder";
@@ -17,11 +16,11 @@ import Footer from "../components/Footer";
 import SocialMedia from "../components/SocialMedia";
 
 class Index extends Component {
-  // componentDidMount() {
-  //   Fonts();
-  //   ReactGA.initialize("UA-117085773-1");
-  //   ReactGA.pageview(document.location.pathname);
-  // }
+  componentDidMount() {
+    Fonts();
+    ReactGA.initialize("UA-117085773-1");
+    ReactGA.pageview(document.location.pathname);
+  }
 
   render() {
     return (
