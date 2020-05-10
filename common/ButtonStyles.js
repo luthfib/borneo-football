@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const RedButton = styled.button`
   background: rgba(223, 0, 18, 1);
@@ -23,11 +23,11 @@ const RedButton = styled.button`
 const BlueButton = styled(RedButton)`
   background: rgb(226, 241, 255);
   color: rgba(223, 0, 18, 1);
-  font-size: ${props => (props.fontSize ? props.fontSize : '22px')};
+  font-size: ${(props) => (props.fontSize ? props.fontSize : "22px")};
   border-radius: 45px;
   padding-left: 30px;
   padding-right: 30px;
-  margin-right: ${props => (props.marginRight ? props.marginRight : '0px')};
+  margin-right: ${(props) => (props.marginRight ? props.marginRight : "0px")};
   width: fit-content;
 
   :hover {
@@ -43,13 +43,18 @@ function Button(props) {
   if (props.type) {
     type = props.type;
   } else {
-    type = 'button';
+    type = "button";
   }
   if (props.blue) {
     return <BlueButton {...props}>{props.children}</BlueButton>;
   }
   return (
-    <RedButton type={type} form="DonateForm" value="Submit">
+    <RedButton
+      type={type}
+      form="DonateForm"
+      value="Submit"
+      style={props.overrideStyle}
+    >
       {props.children}
     </RedButton>
   );

@@ -1,6 +1,6 @@
-import styled from 'styled-components';
-import PropTypes from 'prop-types';
-import CardItem from './CardItem/CardItem';
+import styled from "styled-components";
+import PropTypes from "prop-types";
+import CardItem from "./CardItem/CardItem";
 
 const CardStyles = styled.div`
   width: 33%;
@@ -15,12 +15,13 @@ const CardStyles = styled.div`
 function Card(props) {
   const { src, heading, content, button } = props;
   return (
-    <CardStyles>
+    <CardStyles style={props.styleOverride}>
       <CardItem
         src={src}
         heading={heading}
         content={content}
         button={button}
+        buttonText={props.buttonText}
       ></CardItem>
     </CardStyles>
   );

@@ -1,6 +1,6 @@
-import styled from 'styled-components';
-import Line from '../common/LineStyles';
-import device from '../utils/ResponsiveHelpers';
+import styled from "styled-components";
+import Line from "../common/LineStyles";
+import device from "../utils/ResponsiveHelpers";
 
 const ContainerStyles = styled.div`
   display: block;
