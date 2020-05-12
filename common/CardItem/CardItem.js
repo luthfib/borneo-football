@@ -5,7 +5,6 @@ import {
   CardItemStyles,
 } from "./CardItemStyles";
 import Line from "../LineStyles";
-import Card from "../Card";
 import PaypalButton from "../../components/PaypalButton";
 
 const ShowImage = (props) => {
