@@ -1,8 +1,9 @@
 import styled from 'styled-components';
 
 const CardItemContentStyles = styled.div`
-  font-weight: 100;
   font-size: 18px;
+  line-height: 1.8;
+  font-weight: 400;
 `;
 
 const CardItemHeadingStyles = styled.div`

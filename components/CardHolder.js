@@ -21,7 +21,7 @@ export default function CardHolder(props) {
         styleOverride={CovidProgram}
         button
         buttonText="Donate"
-        heading="KALIMANTAN CHILDREN FIGHTING COVID – 19"
+        heading="KALIMANTAN COVID 19  - PREVENTION & RESPONSE PROGRAM"
         content="Due to the COVID 19 outbreak life as we have known has changed and at Borneo Football International Academy, we have been in the process of adapting to the new arising needs to better serve our young participants.
 
         We shifted the focus of our activities to ensure the safety of all of our staff and beneficiaries by providing COVID 19 educational information to all participants related with the prevention of the virus transmission.
