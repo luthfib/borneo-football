@@ -87,18 +87,15 @@ const ButtonContainer = styled.div`
 
 const VideActiveSectionStyled = styled.iframe`
   width: 50%;
-  background: linear-gradient(0deg, rgba(0,20,50,0.3),rgba(0,20,50,0.3)),
-    url('/static/images/Covid19.jpg');
   background-size: cover;
   background-position: center center;
-  min-height: 50vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 
   @media ${device.tabletSm} {
     width: 100%;
-    padding-bottom: 50px;
 }
 `
 
