@@ -77,7 +77,7 @@ const BannerStyles = styled.div`
 const Banner = () => (
   <BannerStyles>
     <h2>Learn about our efforts to help out during the COVID-19 pandemic </h2>
-    <a href="#Covid-19">learn more</a>
+    <a href="#LearnMore">learn more</a>
   </BannerStyles>
 );
 

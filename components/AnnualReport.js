@@ -120,11 +120,10 @@ const VideoActiveSection = () => {
 }
 
 export default function Container(props) {
-  const [videoIsActive, setVideoIsActive] = useState(false);
-
+  const [videoIsActive, setVideoIsActive] = useState(true);
 
   return (
-    <ContainerStyles>
+    <ContainerStyles  id="LearnMore">
       {videoIsActive ? <VideoActiveSection /> : <VideoInactiveSection setVideoIsActive={setVideoIsActive} />}
       <BrochureStyles>
         <BrochureContainerStyles>
