@@ -54,7 +54,7 @@ class VideoSection extends React.Component {
   render() {
     return (
       <VideoSectionStyles>
-        <VideoFrameStyled style={{ display: this.state.displayVideo }} src="https://www.youtube.com/embed/g5FY-XQS9OU" frameborder="0" allowfullscreen>
+        <VideoFrameStyled style={{ display: this.state.displayVideo }} src="https://www.youtube.com/embed/g5FY-XQS9OU" frameBorder="0" allowfullscreen>
         </VideoFrameStyled>
         <VideButtonRow style={{ display: this.state.displayVideoButton }}>
           <ImgAContainer onClick={this.toggleVideoDisplay.bind(this)}>

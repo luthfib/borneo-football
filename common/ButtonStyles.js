@@ -46,7 +46,7 @@ function Button(props) {
     type = "button";
   }
   if (props.blue) {
-    return <BlueButton {...props}>{props.children}</BlueButton>;
+    return <BlueButton {...props} onClick={() => props.setVideoIsActive(true)}>{props.children}</BlueButton>;
   }
   return (
     <RedButton
