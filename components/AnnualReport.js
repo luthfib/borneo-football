@@ -89,13 +89,14 @@ const VideActiveSectionStyled = styled.iframe`
   width: 50%;
   background-size: cover;
   background-position: center center;
-  min-height: 100vh;
+  min-height: 60vh;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 
   @media ${device.tabletSm} {
     width: 100%;
+    min-height: 90vh;
 }
 `
 
