@@ -1,8 +1,7 @@
-import styled from 'styled-components';
-import { Button } from '../common/ButtonStyles';
-import device from '../utils/ResponsiveHelpers';
-import React, { useState } from 'react';
-
+import styled from "styled-components";
+import { Button } from "../common/ButtonStyles";
+import device from "../utils/ResponsiveHelpers";
+import React, { useState } from "react";
 
 const ContainerStyles = styled.div`
   display: flex;
@@ -17,8 +16,8 @@ const ContainerStyles = styled.div`
 
 const AnnualReportStyles = styled.div`
   width: 50%;
-  background: linear-gradient(0deg, rgba(0,20,50,0.3),rgba(0,20,50,0.3)),
-    url('/static/images/Covid19.jpg');
+  background: linear-gradient(0deg, rgba(0, 20, 50, 0.3), rgba(0, 20, 50, 0.3)),
+    url("/static/images/Covid19.jpg");
   background-size: cover;
   background-position: center center;
   min-height: 50vh;
@@ -81,8 +80,8 @@ const AnnualContainerStyles = styled.div`
 `;
 
 const ButtonContainer = styled.div`
-  padding: ${props => (props.padding ? props.padding : '')};
-  padding-left: ${props => (props.padding_left ? props.padding_left : '')};
+  padding: ${(props) => (props.padding ? props.padding : "")};
+  padding-left: ${(props) => (props.padding_left ? props.padding_left : "")};
 `;
 
 const VideActiveSectionStyled = styled.iframe`
@@ -97,34 +96,47 @@ const VideActiveSectionStyled = styled.iframe`
   @media ${device.tabletSm} {
     width: 100%;
     min-height: 90vh;
-}
-`
+  }
+`;
 
 const VideoInactiveSection = (props) => {
   return (
     <AnnualReportStyles>
-    <AnnualContainerStyles>
-      <HeaderStyles>COVID-19 <br/> Outreach</HeaderStyles>
-    </AnnualContainerStyles>
-    <ButtonContainer blue padding_left="50px">
-        <Button blue setVideoIsActive={props.setVideoIsActive}>Watch</Button>
-    </ButtonContainer>
-  </AnnualReportStyles>
-  )
-}
+      <AnnualContainerStyles>
+        <HeaderStyles>
+          COVID-19 <br /> Outreach
+        </HeaderStyles>
+      </AnnualContainerStyles>
+      <ButtonContainer blue padding_left="50px">
+        <Button blue setVideoIsActive={props.setVideoIsActive}>
+          Watch
+        </Button>
+      </ButtonContainer>
+    </AnnualReportStyles>
+  );
+};
 
 const VideoActiveSection = () => {
   return (
-    <VideActiveSectionStyled src="https://www.youtube.com/embed/ylfXemydqkk" frameBorder="0" allowfullscreen allow="autoplay"></VideActiveSectionStyled>
-  )
-}
+    <VideActiveSectionStyled
+      src="https://www.youtube.com/embed/FFU5r_UD2xE"
+      frameBorder="0"
+      allowfullscreen
+      allow="autoplay"
+    ></VideActiveSectionStyled>
+  );
+};
 
 export default function Container(props) {
   const [videoIsActive, setVideoIsActive] = useState(true);
 
   return (
-    <ContainerStyles  id="LearnMore">
-      {videoIsActive ? <VideoActiveSection /> : <VideoInactiveSection setVideoIsActive={setVideoIsActive} />}
+    <ContainerStyles id="LearnMore">
+      {videoIsActive ? (
+        <VideoActiveSection />
+      ) : (
+        <VideoInactiveSection setVideoIsActive={setVideoIsActive} />
+      )}
       <BrochureStyles>
         <BrochureContainerStyles>
           <HeaderStyles>... AND THERE'S MORE!</HeaderStyles>
