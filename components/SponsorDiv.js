@@ -68,7 +68,7 @@ export default function SponsorDiv(props) {
           <SponsorImgStyles src="/static/images/AustralianVolunteers.png" />
         </SponsorDivStyles>
       </a>
-      <a href="https://unesco.org" target="_blank" rel="noopener noreferrer">
+      <a href="https://en.unesco.org" target="_blank" rel="noopener noreferrer">
         <SponsorDivStyles>
           <SponsorImgStyles src="/static/images/UNESCO.jpg" />
         </SponsorDivStyles>
