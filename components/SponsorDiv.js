@@ -1,5 +1,5 @@
-import styled from 'styled-components';
 import device from '../utils/ResponsiveHelpers';
+import styled from 'styled-components';
 
 const SponsorImgStyles = styled.img`
   height: 160px;
@@ -86,6 +86,11 @@ export default function SponsorDiv(props) {
       <a href="" target="_blank" rel="noopener noreferrer">
         <SponsorDivStyles>
           <SponsorImgStyles src="/static/images/KUB.png" />
+        </SponsorDivStyles>
+      </a>
+      <a href="https://dharmacare.org.au/" target="_blank" rel="noopener noreferrer">
+        <SponsorDivStyles>
+          <SponsorImgStyles src="/static/images/DharmaCare.jpg" />
         </SponsorDivStyles>
       </a>
     </ContainerStyle>
