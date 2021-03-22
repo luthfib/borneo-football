@@ -1,19 +1,19 @@
-import Head from "next/head";
+import CardHolder from "../components/CardHolder";
+import CardHolderAction from "../components/CardHolderAction";
 import { Component } from "react";
-import ReactGA from "react-ga";
-import Layout from "../components/Layout.js";
+import Container from "../components/AnnualReport";
 import DonateLayout from "../components/DonateLayout";
 import Fonts from "../common/Font";
-import SectionHeading from "../components/SectionHeading";
-import VideoSection from "../components/VideoSection";
-import CardHolder from "../components/CardHolder";
-import ImageBackground from "../components/ImageBackground";
-import CardHolderAction from "../components/CardHolderAction";
-import globalStyle from "./global.css";
-import SponsorDiv from "../components/SponsorDiv";
-import Container from "../components/AnnualReport";
 import Footer from "../components/Footer";
+import Head from "next/head";
+import ImageBackground from "../components/ImageBackground";
+import Layout from "../components/Layout.js";
+import ReactGA from "react-ga";
+import SectionHeading from "../components/SectionHeading";
 import SocialMedia from "../components/SocialMedia";
+import SponsorDiv from "../components/SponsorDiv";
+import VideoSection from "../components/VideoSection";
+import globalStyle from "./global.css";
 
 class Index extends Component {
   componentDidMount() {
