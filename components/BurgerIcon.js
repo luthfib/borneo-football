@@ -1,5 +1,6 @@
-import styled from "styled-components";
 import PaypalButton from "./PaypalButton";
+import React from "react";
+import styled from "styled-components";
 
 const HeaderStyled = styled.header`
   background-color: transparent;

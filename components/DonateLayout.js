@@ -1,6 +1,6 @@
-import styled from 'styled-components';
-import PaypalButton from '../components/PaypalButton'
-import device from '../utils/ResponsiveHelpers';
+import PaypalButton from "../components/PaypalButton";
+import device from "../utils/ResponsiveHelpers";
+import styled from "styled-components";
 
 const DonateLayoutStyles = styled.div`
   display: flex;

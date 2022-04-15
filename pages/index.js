@@ -13,7 +13,6 @@ import SectionHeading from "../components/SectionHeading";
 import SocialMedia from "../components/SocialMedia";
 import SponsorDiv from "../components/SponsorDiv";
 import VideoSection from "../components/VideoSection";
-import globalStyle from "./global.css";
 
 class Index extends Component {
   componentDidMount() {
@@ -24,7 +23,7 @@ class Index extends Component {
 
   render() {
     return (
-      <div className={globalStyle}>
+      <div>
         <Head>
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <meta charSet="utf-8" />
