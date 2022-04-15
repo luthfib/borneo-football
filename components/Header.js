@@ -1,7 +1,8 @@
-import styled from 'styled-components';
-import PaypalButton from './PaypalButton';
-import Logo from './Logo';
-import device from '../utils/ResponsiveHelpers';
+import Logo from "./Logo";
+import PaypalButton from "./PaypalButton";
+import React from "react";
+import device from "../utils/ResponsiveHelpers";
+import styled from "styled-components";
 
 const HeaderStyled = styled.div`
   text-align: center;

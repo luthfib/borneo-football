@@ -1,6 +1,5 @@
-import styled from "styled-components";
-import PropTypes from "prop-types";
 import CardItem from "./CardItem/CardItem";
+import styled from "styled-components";
 
 const CardStyles = styled.div`
   width: 33%;
@@ -26,12 +25,5 @@ function Card(props) {
     </CardStyles>
   );
 }
-
-Card.propTypes = {
-  src: PropTypes.string,
-  heading: PropTypes.string,
-  content: PropTypes.string,
-  button: PropTypes.string,
-};
 
 export default Card;
