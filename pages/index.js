@@ -74,7 +74,7 @@ class Index extends Component {
         </SectionHeading>
         <VideoSection />
         <SectionHeading navID="OurWork" heading="OUR WORK">
-          The minimum wage for people in Central Kalimantan is well under $200 a
+          The minimum wage for people in Central Kalimantan is well under $230 a
           month. Parents find it hard just to send their children to school -
           let alone provide them with extracurricular activities. Our players
           can take part in not only a wide range of football activities but also
