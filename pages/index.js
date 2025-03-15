@@ -37,11 +37,40 @@ class Index extends Component {
         <Layout></Layout>
         <DonateLayout />
         <SectionHeading navID="About" heading="ABOUT">
-          Borneo Football International Academy kicked off in 2015 with just 14
-          children - word quickly spread and today, 4 years later, the Academy
-          has 340 players including three all girls team and reaches more than
-          1000 students in local schools through football training, health and
-          education programs
+          Since 2015, the Borneo Football International Foundation (BFIF) has
+          been actively working in Central Kalimantan , Indonesian Borneo, as a
+          Sports for Development organization (S4D), achieving positive outcomes
+          in the areas of Education, Health, Social Inclusion, Child Protection,
+          and Empowerment.
+          <br /> <br />
+          BFIF’s mission is to improve the quality of life of Kalimantan's
+          underprivileged children through sports. Using football as a tool for
+          social change assists their physical, mental, and social development
+          through three complementary programs – Football Practice, Education,
+          and Health, promoting gender equality, empowering women, motivating
+          young people to pursue formal education, and having better job
+          opportunities. The BFIF provides a safe environment for children to
+          play sports and it promotes tolerance in diversity for a
+          peace-building community.
+          <br /> <br />
+          The foundation created the Borneo Football Academy (BFIA) as the
+          vehicle to implement its programs. BFIA’s methods and activities show
+          that through sports, vulnerable and marginalized children from
+          different and often conflicting social/ethnic groups can develop
+          important social, peace-building, and life skills. Their self-esteem
+          increases, they learn to become team players, learn tolerance and
+          mutual respect for the diversity of ethnic and religious backgrounds.
+          Through sports and team activities, they acquire discipline,
+          cooperative spirit, responsibility, and direction in their lives.
+          <br /> <br />
+          Today the BFIA counts on a team of experienced professionals in the
+          areas of football, health and education, dedicated to work in the
+          implementation of BFIA’s programs. Borneo Football International
+          Academy kicked off in 2015 with just 14 children - word quickly spread
+          and today, the Academy has more than 450 players in six training
+          centers including four all girls team and reaches more than 3000
+          students in 40 local schools through football trainings, health and
+          education programs.
         </SectionHeading>
         <VideoSection />
         <SectionHeading navID="OurWork" heading="OUR WORK">
