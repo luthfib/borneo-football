@@ -4,8 +4,6 @@ import Header from "./Header";
 import Tagline from "./Tagline";
 import device from "../utils/ResponsiveHelpers";
 import BurgerIcon from "./BurgerIcon";
-import Banner from "./Banner";
-// url('/static/images/Cover.jp2')
 
 const LayoutStyles = styled.div`
   background: linear-gradient(0deg, rgba(0, 20, 50, 0.3), rgba(0, 20, 50, 0.3)),
@@ -34,7 +32,6 @@ export default class Layout extends React.Component {
     return (
       <React.Fragment>
         <LayoutStyles img="/static/images/Cover.jpg">
-          <Banner />
           <ContainerStyles>
             <BurgerIcon></BurgerIcon>
 
