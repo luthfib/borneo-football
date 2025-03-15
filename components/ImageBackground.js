@@ -1,6 +1,6 @@
-import styled from 'styled-components';
-import Line from '../common/LineStyles'
-import device from '../utils/ResponsiveHelpers';
+import styled from "styled-components";
+import Line from "../common/LineStyles";
+import device from "../utils/ResponsiveHelpers";
 
 const ImageBackgroundStyles = styled.div`
   color: white;
@@ -57,8 +57,8 @@ export default function ImageBackground(props) {
       <TaglineStyles>
         <Line primary override="none" />
         <HeaderStyles>
-          Most of the people who work with us do it purely for the love of
-          football and to give back to the community.
+          Most of the people involved in BFI love football and love the children
+          we serve. They are inspired by a wish to give back to the community.
         </HeaderStyles>
       </TaglineStyles>
     </ImageBackgroundStyles>

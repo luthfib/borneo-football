@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import CardAction from '../common/CardAction'
+import styled from "styled-components";
+import CardAction from "../common/CardAction";
 
 const CardHolderStyled = styled.div`
   display: flex;
@@ -27,7 +27,7 @@ export default function CardHolderAction(props) {
       ></CardAction>
       <CardAction
         heading="GOALKEEPER"
-        content="We are quickly outgrowing our current training facility and have started work on a multi- purpose football campus on a 7-hectare plot of donated land. If you are interested in making a major gift towards this goal please contact us for more information. We are pleased to offer official recognition to individuals, companies and institutions."
+        content="We welcome individuals and organizations willing to join us and support our main programs. If you are interested in making a major gift towards this goal please contact us for more information. We are pleased to offer official recognition to individuals, companies and NGO’s."
         button="DONATE"
       ></CardAction>
     </CardHolderStyled>

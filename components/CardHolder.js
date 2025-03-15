@@ -25,12 +25,12 @@ export default function CardHolder(props) {
       <Card
         heading="HEALTH AND NUTRITION"
         src="/static/images/Health.png"
-        content="Central Kalimantan has one of the highest stunting rates in Indonesia, and we found many of our young players were underweight and below average height. We initiated a program to address this issue, providing nutritional drinks during practice, information on healthy living and a health assessment to measure their physical development."
+        content="Central Kalimantan has one of the highest stunting rates in Indonesia, and we found many of our young players were underweight and below average height. Although stunting cannot be reversed, nonetheless through sports, nutritional supplements and health assessment and education, the BFIA has initiated a program to support the good health of our players. "
       ></Card>
       <Card
         heading="EDUCATION"
         src="/static/images/Education.png"
-        content="In Central Kalimantan, nearly 1 in 3 children aged 7-15 drop out of school mainly due to economic pressures. We support our players with educational materials and school fee subsidies. Sponsorship is also provided for English and computer classes, vocational courses and conservation activities through our partner NGO-YUM (Yayasan Usaha Mulia)."
+        content="In Central Kalimantan, nearly 1 in 3 children aged 7-15 drop out of school mainly due to economic pressures. We support our players with educational materials and school fee subsidies. Sponsorship is also provided for English and computer classes, vocational courses and conservation activities working together with our partners."
       ></Card>
     </CardholderStyles>
   );
