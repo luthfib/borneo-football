@@ -4,7 +4,7 @@ import device from "../utils/ResponsiveHelpers";
 
 const ImageBackgroundStyles = styled.div`
   color: white;
-  background: linear-gradient(0deg, rgba(0, 20, 50, 0.3), rgba(0, 20, 50, 0.2)),
+  background: linear-gradient(0deg, rgba(0, 20, 50, 0.5), rgba(0, 20, 50, 0.3)),
     url(/static/images/GirlsCoverPhoto.jpg);
   background-size: cover;
   resize: both;
