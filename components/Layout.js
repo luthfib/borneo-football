@@ -31,7 +31,7 @@ export default class Layout extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <LayoutStyles img="/static/images/Cover.jpg">
+        <LayoutStyles img="/static/images/CoverPhoto.jpg">
           <ContainerStyles>
             <BurgerIcon></BurgerIcon>
 
