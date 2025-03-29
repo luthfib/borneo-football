@@ -25,6 +25,25 @@ class Index extends Component {
     return (
       <div>
         <Head>
+          <link rel="icon" href="/static/images/favicon.ico" />
+          <link
+            rel="icon"
+            type="image/png"
+            href="/favicon-96x96.png"
+            sizes="96x96"
+          />
+          <link
+            rel="icon"
+            type="image/svg+xml"
+            href="/static/images/favicon.svg"
+          />
+          <link rel="shortcut icon" href="/static/images/favicon.ico" />
+          <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="/static/images/apple-touch-icon.png"
+          />
+          <link rel="manifest" href="/static/images/site.webmanifest" />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <meta charSet="utf-8" />
           <meta
