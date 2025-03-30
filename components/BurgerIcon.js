@@ -131,8 +131,8 @@ class BurgerIcon extends React.Component {
   state = {
     bgColor: "transparent",
     checked: false,
-    topYOffset: 80,
-    heightOfBanner: 80,
+    topYOffset: 0,
+    heightOfBanner: 0,
   };
 
   constructor(props) {
