@@ -13,6 +13,8 @@
       src={coverImg} 
       alt="Borneo Football children" 
       class="absolute inset-0 w-full h-full object-cover" 
+      fetchpriority="high"
+      loading="eager"
     />
     <div class="absolute inset-0 bg-gradient-to-b from-[rgba(var(--color-blue-dark-rgb),0.5)] to-[rgba(var(--color-blue-dark-rgb),0.4)]"></div>
     

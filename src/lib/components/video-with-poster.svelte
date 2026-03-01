@@ -2,6 +2,12 @@
   /** Video embed with poster image and play button; toggles to iframe on click */
   let { embedUrl, posterImageUrl, title = 'Video', rounded = true, class: className = '' } = $props();
   let displayVideo = $state(false);
+
+  // Helper to ensure autoplay when user clicks play
+  function getEmbedUrl(url) {
+    const separator = url.includes('?') ? '&' : '?';
+    return `${url}${separator}autoplay=1`;
+  }
 </script>
 
 <div
@@ -15,10 +21,12 @@
 
     {#if displayVideo}
       <iframe
-        src={embedUrl}
+        src={getEmbedUrl(embedUrl)}
         class="absolute inset-0 w-full h-full border-0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen
         title={title}
+        loading="lazy"
       ></iframe>
     {:else}
       <button
