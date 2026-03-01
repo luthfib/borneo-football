@@ -61,15 +61,16 @@
 {#if isOpen}
   <div use:portal class="relative z-[9999]">
     <!-- Backdrop -->
-    <div
-      class="fixed inset-0 bg-black/60 z-40"
+    <button
+      type="button"
+      class="fixed inset-0 bg-black/60 z-40 border-none w-full h-full cursor-default"
       transition:fade={{ duration: 250 }}
       onclick={closeMenu}
-      aria-hidden="true"
-    ></div>
+      aria-label="Close menu"
+    ></button>
 
     <!-- Drawer panel -->
-    <nav
+    <div
       class="fixed top-0 right-0 h-full w-72 bg-[var(--color-blue-dark)] z-50 flex flex-col shadow-2xl"
       transition:fly={{ x: 288, duration: 300, easing: quintOut }}
       role="dialog"
@@ -91,19 +92,19 @@
       </div>
 
       <!-- Nav links -->
-      <div class="flex-1 py-2 overflow-y-auto">
+      <nav class="flex-1 py-2 overflow-y-auto">
         <a href="/" onclick={closeMenu} class="flex items-center px-6 py-4 text-white/85 no-underline text-base font-medium hover:bg-white/10 hover:text-white transition-colors border-b border-slate-800">HOME</a>
         <a href="#About" onclick={closeMenu} class="flex items-center px-6 py-4 text-white/85 no-underline text-base font-medium hover:bg-white/10 hover:text-white transition-colors border-b border-slate-800">ABOUT US</a>
         <a href="#OurWork" onclick={closeMenu} class="flex items-center px-6 py-4 text-white/85 no-underline text-base font-medium hover:bg-white/10 hover:text-white transition-colors border-b border-slate-800">OUR WORK</a>
         <a href="#GetInvolved" onclick={closeMenu} class="flex items-center px-6 py-4 text-white/85 no-underline text-base font-medium hover:bg-white/10 hover:text-white transition-colors border-b border-slate-800">GET INVOLVED</a>
         <a href="#OurPartners" onclick={closeMenu} class="flex items-center px-6 py-4 text-white/85 no-underline text-base font-medium hover:bg-white/10 hover:text-white transition-colors">PARTNER</a>
-      </div>
+      </nav>
 
       <!-- Donate -->
       <div class="px-6 py-6 border-t border-slate-700/60">
-        <PaypalButton class="w-full">DONATE</PaypalButton>
+        <PaypalButton fullWidth>DONATE</PaypalButton>
       </div>
-    </nav>
+    </div>
   </div>
 {/if}
 

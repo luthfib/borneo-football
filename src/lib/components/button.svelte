@@ -29,7 +29,8 @@
     dark:
       'border-none bg-[var(--color-blue-dark)] text-white hover:bg-[rgb(0,30,70)]'
   };
-  const classes = `${baseClasses} ${variantClasses[variant]} ${className}`.trim();
+  
+  const classes = $derived(`${baseClasses} ${variantClasses[variant] || variantClasses.primary} ${className}`.trim());
 
   function handleClick(e) {
     if (onclick) onclick(e);

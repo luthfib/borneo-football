@@ -20,7 +20,7 @@
 
 <svelte:window onkeydown={onKeydown} />
 
-<section class="bg-white pt-0 pb-16 md:pb-24">
+<section class="bg-white py-12 md:py-16">
   <div class="w-[90%] max-w-6xl mx-auto">
     <div class="flex flex-col lg:flex-row items-stretch gap-10 lg:gap-14">
       <div class="flex-1 min-w-0 flex flex-col justify-center order-2 lg:order-1">
@@ -55,10 +55,12 @@
     aria-modal="true"
     aria-label="About BFIF"
   >
-    <div
-      class="absolute inset-0 bg-black/60 backdrop-blur-sm"
+    <button
+      type="button"
+      class="absolute inset-0 bg-black/60 backdrop-blur-sm border-none w-full h-full cursor-default"
       onclick={() => (open = false)}
-    ></div>
+      aria-label="Close modal"
+    ></button>
 
     <div class="relative z-10 w-full max-w-2xl max-h-[85vh] flex flex-col bg-[var(--color-blue-dark)] rounded-2xl shadow-2xl overflow-hidden">
       <div class="flex items-center justify-between px-8 py-6 border-b border-white/10">
