@@ -6,6 +6,6 @@
   <enhanced:img
     alt="Brand"
     {src}
-    class="object-contain {compact ? 'pr-3 h-[60px] md:h-[72px]' : 'pr-6 md:pl-12 h-[75px] md:h-[85px]'} w-auto"
+    class="object-contain {compact ? 'pr-3 h-[72px] md:h-[88px]' : 'pr-6 md:pl-12 h-[80px] md:h-[90px]'} w-auto"
   />
 </div>
