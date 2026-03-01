@@ -5,7 +5,7 @@
   import logoImg from '$lib/assets/images/Logo.png?enhanced';
 </script>
 
-<header class="w-full h-[80px] md:h-[96px] flex items-center absolute top-0 left-0 z-10 bg-[var(--color-blue-dark)]/60 backdrop-blur-sm md:bg-transparent md:backdrop-blur-none">
+<header class="w-full h-[80px] md:h-[96px] flex items-center absolute top-0 left-0 z-[100] bg-transparent">
   <div class="max-w-6xl mx-auto w-full flex items-center justify-between px-4 md:px-10 relative">
     <a href="/" class="flex-shrink-0 flex items-center">
       <Logo src={logoImg} height="56px" mdHeight="64px" compact />
