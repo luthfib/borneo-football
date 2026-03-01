@@ -11,6 +11,7 @@
   />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://borneofootball.org/" />
+  <link rel="preload" href="/images/Cover.jpg" as="image" />
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website" />

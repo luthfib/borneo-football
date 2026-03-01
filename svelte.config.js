@@ -1,9 +1,12 @@
-import adapter from '@sveltejs/adapter-auto';
+import adapter from '@sveltejs/adapter-vercel';
 
 const config = {
-  kit: {
-    adapter: adapter()
-  }
+	kit: {
+		adapter: adapter(),
+		alias: {
+			$assets: 'src/lib/assets'
+		}
+	}
 };
 
 export default config;

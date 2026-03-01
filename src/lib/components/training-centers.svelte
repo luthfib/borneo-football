@@ -1,8 +1,6 @@
 <script>
-  /** Optional: path to map image (e.g. /images/training-centers-map.png). Add image to static/images/ to display. */
   import { reveal } from "$lib/utils/reveal";
-  let { mapImageSrc = "/images/training-centers-map.png" } = $props();
-  let mapError = $state(false);
+  import mapImg from '$lib/assets/images/training-centers-map.png?enhanced';
 
   const centers = [
     { name: "Tumbang Kaman", primary: false },
@@ -14,7 +12,7 @@
   ];
 </script>
 
-<section class="bg-(--color-blue-dark) py-16 md:py-24">
+<section class="bg-[var(--color-blue-dark)] py-16 md:py-24">
   <div class="w-[90%] max-w-6xl mx-auto">
     <p
       use:reveal={{ delay: "0.1s" }}
@@ -59,18 +57,11 @@
       </ul>
       <div use:reveal={{ delay: "0.4s" }}>
         <div class="w-full rounded-2xl overflow-hidden">
-          {#if mapError}
-            <p class="text-slate-400 text-sm text-center px-4">
-              Map of Central Kalimantan
-            </p>
-          {:else}
-            <img
-              src={mapImageSrc}
-              alt="Map of Borneo showing BFIA training center locations: Tumbang Kaman, Dahian Tunggal, Kasongan, Rungan Sari, Habaring Hurung, Palangkaraya"
-              class="w-full h-auto object-contain"
-              onerror={() => (mapError = true)}
-            />
-          {/if}
+          <enhanced:img
+            src={mapImg}
+            alt="Map of Borneo showing BFIA training center locations: Tumbang Kaman, Dahian Tunggal, Kasongan, Rungan Sari, Habaring Hurung, Palangkaraya"
+            class="w-full h-auto object-contain"
+          />
         </div>
       </div>
     </div>
