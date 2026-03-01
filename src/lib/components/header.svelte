@@ -8,7 +8,7 @@
 <header class="w-full h-[80px] md:h-[96px] flex items-center absolute top-0 left-0 z-[100] bg-transparent">
   <div class="max-w-6xl mx-auto w-full flex items-center justify-between px-4 md:px-10 relative">
     <a href="/" class="flex-shrink-0 flex items-center">
-      <Logo src={logoImg} height="56px" mdHeight="64px" compact />
+      <Logo src={logoImg} compact />
     </a>
     <nav class="hidden md:flex items-center gap-2 lg:gap-4 absolute left-1/2 -translate-x-1/2">
       <a href="/" class="whitespace-nowrap py-3 px-3 text-white/95 no-underline text-sm font-medium hover:text-white rounded-[var(--radius-button)] hover:bg-white/10">HOME</a>

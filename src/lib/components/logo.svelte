@@ -1,19 +1,11 @@
 <script>
-  let { src, height = '56px', mdHeight = '64px', width = 'auto', compact = false } = $props();
+  let { src, compact = false } = $props();
 </script>
 
-<!-- Wrap in a div with reserved height to prevent CLS -->
-<div class="flex items-center" style="height: {height};">
+<div class="flex items-center h-[80px] md:h-[96px]">
   <enhanced:img
     alt="Brand"
     {src}
-    class="object-contain {compact ? 'pr-3' : 'pr-6 md:pl-12'} hidden md:block"
-    style="height: {mdHeight}; width: {width}; max-height: {compact ? '80px' : '175px'};"
-  />
-  <enhanced:img
-    alt="Brand"
-    {src}
-    class="object-contain {compact ? 'pr-3' : 'pr-6 md:pl-12'} md:hidden"
-    style="height: {height}; width: {width}; max-height: {compact ? '80px' : '175px'};"
+    class="object-contain {compact ? 'pr-3 h-[60px] md:h-[72px]' : 'pr-6 md:pl-12 h-[75px] md:h-[85px]'} w-auto"
   />
 </div>
