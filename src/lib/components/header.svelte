@@ -5,10 +5,10 @@
   import logoImg from '$lib/assets/images/Logo.png?enhanced';
 </script>
 
-<header class="w-full py-3 md:py-4 relative md:absolute md:top-0 md:left-0 md:z-10 bg-[var(--color-blue-dark)]/60 backdrop-blur-sm md:bg-transparent md:backdrop-blur-none">
+<header class="w-full h-[80px] md:h-[96px] flex items-center absolute top-0 left-0 z-10 bg-[var(--color-blue-dark)]/60 backdrop-blur-sm md:bg-transparent md:backdrop-blur-none">
   <div class="max-w-6xl mx-auto w-full flex items-center justify-between px-4 md:px-10 relative">
-    <a href="/" class="flex-shrink-0">
-      <Logo src={logoImg} height="72px" compact />
+    <a href="/" class="flex-shrink-0 flex items-center">
+      <Logo src={logoImg} height="56px" mdHeight="64px" compact />
     </a>
     <nav class="hidden md:flex items-center gap-2 lg:gap-4 absolute left-1/2 -translate-x-1/2">
       <a href="/" class="whitespace-nowrap py-3 px-3 text-white/95 no-underline text-sm font-medium hover:text-white rounded-[var(--radius-button)] hover:bg-white/10">HOME</a>

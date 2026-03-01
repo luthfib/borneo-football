@@ -8,7 +8,8 @@
 
 <div class="flex flex-col relative">
   <Header />
-  <section class="min-h-[70vh] md:min-h-[85vh] flex items-center relative overflow-hidden bg-[var(--color-blue-dark)]">
+  <!-- Use min-height and padding to reserve space for content and prevent CLS -->
+  <section class="min-h-[70vh] md:min-h-[85vh] flex items-center relative overflow-hidden bg-[var(--color-blue-dark)] pt-[80px] md:pt-[96px]">
     <enhanced:img 
       src={coverImg} 
       alt="Borneo Football children" 

@@ -56,27 +56,33 @@
 </script>
 
 <section
-  class="bg-[var(--color-blue-dark)] py-16 md:py-24 relative overflow-hidden"
+  class="bg-[var(--color-blue-dark)] py-12 md:py-16 relative overflow-hidden min-h-[300px] flex items-center"
   use:useIntersect={setInView}
 >
 
   <div class="relative w-[90%] max-w-6xl mx-auto">
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-10">
-      {#if inView}
-        {#each stats as stat, i}
-          <div
-            class="flex flex-col items-center text-center lg:items-start lg:text-left"
-            in:fly={{ y: 32, duration: 500, delay: i * 120, easing: quintOut }}
-          >
-          <span class="{stat.color} font-extrabold text-4xl sm:text-5xl md:text-6xl tabular-nums tracking-tight">
-            {displayValues[i]}
-          </span>
-          <p class="mt-2 text-[var(--color-text-muted)] text-[10px] sm:text-xs font-bold leading-snug max-w-[200px] uppercase tracking-widest lg:text-left">
+      {#each stats as stat, i}
+        <div class="flex flex-col items-center text-center">
+          <div class="h-[60px] sm:h-[72px] md:h-[80px] flex items-center justify-center">
+            {#if inView}
+              <span
+                class="{stat.color} font-extrabold text-4xl sm:text-5xl md:text-6xl tabular-nums tracking-tight"
+                in:fly={{ y: 32, duration: 500, delay: i * 120, easing: quintOut }}
+              >
+                {displayValues[i]}
+              </span>
+            {:else}
+              <span class="{stat.color} font-extrabold text-4xl sm:text-5xl md:text-6xl tabular-nums tracking-tight opacity-0">
+                0
+              </span>
+            {/if}
+          </div>
+          <p class="mt-2 text-[var(--color-text-muted)] text-[10px] sm:text-xs font-bold leading-snug max-w-[200px] uppercase tracking-widest">
             {stat.label}
           </p>
         </div>
-        {/each}
-      {/if}
+      {/each}
     </div>
   </div>
 </section>
