@@ -2,6 +2,7 @@
   import VideoWithPoster from './video-with-poster.svelte';
   import Button from './button.svelte';
   import { reveal } from '$lib/utils/reveal';
+  import videoCoverImg from '$lib/assets/images/VideoCover.png?enhanced';
 
   const aboutParagraphs = [
     "Since 2015, the Borneo Football International Foundation (BFIF) has been actively working in Central Kalimantan, Indonesian Borneo, as a Sports for Development organization (S4D), achieving positive outcomes in the areas of Education, Health, Social Inclusion, Child Protection, and Empowerment.",
@@ -37,7 +38,7 @@
         <div class="w-full rounded-2xl overflow-hidden border border-slate-200 bg-slate-50 shadow-sm">
           <VideoWithPoster
             embedUrl="https://www.youtube.com/embed/g5FY-XQS9OU"
-            posterImageUrl="/images/VideoCover.png"
+            posterImageUrl={videoCoverImg}
             title="Borneo Football video"
             rounded={false}
           />

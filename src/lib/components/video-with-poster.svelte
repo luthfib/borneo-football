@@ -7,10 +7,12 @@
 <div
   class="relative w-full overflow-hidden bg-neutral-900 shadow-[0_25px_50px_-12px_rgba(0,0,0,0.35)] ring-1 ring-neutral-800 {rounded ? 'rounded-2xl border border-neutral-200/80' : ''} {className}"
 >
-  <div
-    class="relative aspect-video w-full bg-cover bg-center"
-    style="background-image: linear-gradient(0deg, rgba(0, 20, 50, 0.4), rgba(0, 20, 50, 0.25)), url('{posterImageUrl}');"
-  >
+  <div class="relative aspect-video w-full overflow-hidden">
+    {#if !displayVideo}
+      <enhanced:img src={posterImageUrl} alt={title} class="absolute inset-0 w-full h-full object-cover" />
+      <div class="absolute inset-0 bg-gradient-to-b from-[rgba(var(--color-blue-dark-rgb),0.4)] to-[rgba(var(--color-blue-dark-rgb),0.25)]"></div>
+    {/if}
+
     {#if displayVideo}
       <iframe
         src={embedUrl}

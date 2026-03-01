@@ -2,7 +2,7 @@
   let { src, height, compact = false } = $props();
 </script>
 
-<img
+<enhanced:img
   alt="Brand"
   {src}
   {height}

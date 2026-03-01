@@ -2,14 +2,15 @@
   import Button from './button.svelte';
   import Line from './line.svelte';
   import { reveal } from '$lib/utils/reveal';
+  import brochureImg from '$lib/assets/images/BrochureCover.jpg?enhanced';
 </script>
 
-<section class="bg-[var(--color-blue-dark)] py-16 md:py-24" id="LearnMore">
+<section class="bg-[var(--color-blue-dark)] py-16 md:py-20" id="LearnMore">
   <div class="w-[90%] max-w-6xl mx-auto">
     <div class="flex flex-col md:flex-row items-start gap-10 md:gap-16">
       <div use:reveal={{ delay: '0.3s', y: '30px' }} class="flex-shrink-0 w-fit order-2 md:order-1">
-        <img
-          src="/images/BrochureCover.jpg"
+        <enhanced:img
+          src={brochureImg}
           alt="BFIA brochure cover"
           class="w-48 md:w-56 rounded-lg shadow-2xl"
         />

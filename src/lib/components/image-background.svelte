@@ -2,9 +2,10 @@
   import Line from './line.svelte';
   import MediaBlock from './media-block.svelte';
   import { reveal } from '$lib/utils/reveal';
+  import girlsCoverImg from '$lib/assets/images/GirlsCoverPhoto.jpg?enhanced';
 </script>
 
-<MediaBlock imageUrl="/images/GirlsCoverPhoto.jpg" gradient="0deg, rgba(var(--color-blue-dark-rgb), 0.5), rgba(var(--color-blue-dark-rgb), 0.3)">
+<MediaBlock imageUrl={girlsCoverImg} gradient="0deg, rgba(var(--color-blue-dark-rgb), 0.5), rgba(var(--color-blue-dark-rgb), 0.3)">
   <div use:reveal={{ delay: '0.1s' }} class="flex justify-center w-full">
     <Line primary override="auto" />
   </div>
