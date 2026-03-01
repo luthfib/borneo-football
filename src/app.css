@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-red: var(--color-red);
+  --color-brand-dark: var(--color-blue-dark);
+  --color-brand-gold: var(--color-gold);
+  --color-brand-muted: var(--color-text-muted);
+
+  --color-muted: #8fa3b8; /* muted text on dark backgrounds, replaces text-white/60 */
+  --color-body: var(--color-blue-dark);
+}
+
+@layer base {
+  :root {
+    /* Colors */
+    --color-red: #df0012;
+    --color-red-hover: #c3000f;
+    --color-blue-dark: #001432;
+    --color-blue-dark-rgb: 0, 20, 50;
+    --color-gold: #fbbf24;
+    --color-text-muted: #edf7f6;
+    --color-white: #fafffd;
+    --color-gray: #eceff1;
+
+    /* Layout & Components */
+    --radius-button: 0.75rem;
+
+    /* Standard Button Sizing */
+    --button-py: 0.75rem; /* 12px */
+    --button-px: 1.5rem; /* 24px */
+    --button-font-size: 0.875rem; /* 14px */
+    --button-font-weight: 600;
+  }
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: "Mulish", sans-serif;
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
+}
